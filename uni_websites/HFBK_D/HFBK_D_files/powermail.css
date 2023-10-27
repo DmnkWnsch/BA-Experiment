@@ -1,0 +1,131 @@
+/*** Powermai allgemeine Styles ***/
+
+.tx-powermail .container-fluid {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.tx-powermail .row {
+	display: block;
+	flex-wrap: unset;
+}
+
+.tx-powermail div[class*="col-"] {
+	max-width: inherit;
+}
+
+.form-horizontal .control-label {
+	text-align: left;
+}
+
+.form-horizontal .form-group {
+  margin-left: 0;
+  margin-right: 0;  
+}
+.loginform.form-horizontal .form-group {
+	width: 100%;
+}
+
+.form-horizontal .row {
+	margin-bottom: 0 !important;
+}
+
+input.btn {
+	background: red;
+	border: none;
+	border-radius: 0;
+	color: #fff;
+}
+
+input.btn:hover {	
+	color: #fff;
+}
+
+input[data-powermail-form-ajax="confirmation"] {
+	margin-right: 20px;
+}
+
+.news .form-group select {
+	border-radius: 0;
+    border: 3px solid #727173;	
+}
+
+/*** Radio Button Anrede ***/
+.radio {
+
+	float:left;
+}
+
+.checkbox label, .radio label, .tx-powermail input, .tx-go-maps-ext input {
+	font-size: 14px;
+    line-height: 18px;
+}
+
+/*** PLZ Ort ***/
+.powermail_fieldwrap_plzstadt #powermail_field_plzstadt{
+	width: 40%
+}
+.powermail_fieldwrap_stadt {
+	margin-bottom: 0px;
+}
+.powermail_fieldwrap_stadt  .col-lg-9,
+.powermail_fieldwrap_stadt  .col-md-9,
+.powermail_fieldwrap_stadt  .col-sm-8 {
+	margin-left: 25%;
+}
+.powermail_fieldwrap_stadt #powermail_field_stadt{
+	width: 58%;
+	margin-top: -49px;
+	margin-right: 11%;
+	float: right;
+}
+.layout1 .control-label {
+	display: none;
+}
+
+.powermail_fieldwrap_hinweistext {
+	font-size: 0.8rem;
+}
+
+/*** Label Pflichtfeld ***/
+.powermail_fieldwrap_pflichtfelder .no-label{
+	text-align: right;
+}
+
+.powermail_fieldwrap_pflichtfelder .col-md-9,
+.powermail_fieldwrap_pflichtfelder .col-sm-8 {
+	text-align: right;
+	margin-top: -50px;
+}
+
+/*** Pflichtfelld Error Hinweis 
+.tx-powermail .powermail_form .powermail_fieldset .parsley-errors-list.filled,
+.tx-powermail .powermail_fieldset .powermail-errors-list.filled {
+	display: none;
+}***/
+.tx-powermail .powermail_form  .powermail_fieldset .powermail_field_error, 
+.tx-powermail .powermail_form .powermail_fieldset .parsley-error, 
+.tx-powermail .powermail_form  .powermail_fieldset .powermail_form .parsley-error:focus, 
+.tx-powermail .powermail_form  .powermail_fieldset div.error {
+	background-color: rgba(255,0,0,0.5);
+}
+
+
+/*** Media Screens ***/
+
+@media screen and (min-width: 768px) {
+
+.powermail_fieldwrap_stadt  .col-sm-8 {
+	margin-left: 33%;
+}
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+.powermail_fieldwrap_stadt .col-sm-8 {
+	margin-left: 0%;
+}
+
+}

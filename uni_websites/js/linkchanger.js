@@ -4,5 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let element = linkElements[i];
     element.href = "javascript:void(0);";
     element.setAttribute("onclick", "handleLinkClick();");
+    if (element.hasAttribute("target")) {
+      element.removeAttribute("target");
+    }
   }
 });

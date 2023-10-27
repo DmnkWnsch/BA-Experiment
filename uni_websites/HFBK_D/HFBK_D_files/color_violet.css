@@ -1,0 +1,374 @@
+:root body[data-colortheme="violet"] {
+  --buttonfarbe: #9966FF;
+}
+
+body[data-colortheme="violet"] .infobox > .content {
+  border-color: #9966FF; 
+}
+
+body[data-colortheme="violet"] .cookie-consent-replacement .btn-primary {
+ background-color: #fff;
+    border-color: #9966FF; 
+    color: #9966FF;
+}
+
+body[data-colortheme="violet"] .cookie-consent-replacement .btn-primary:hover,
+body[data-colortheme="violet"] .cookie-consent-replacement .btn-primary:focus {
+  background-color: #9966FF;
+    border-color: #9966FF; 
+    color: #fff; 
+}
+
+body[data-colortheme="violet"] #quicknavigation {
+    background-color: #9966FF;
+}
+
+body[data-colortheme="violet"] hr,
+body[data-colortheme="violet"] .hr {
+    background: #9966FF;
+}
+
+body[data-colortheme="violet"] .quicknavigation-mobile span {
+    background: #9966FF;    
+}
+
+body[data-colortheme="violet"] a:focus {
+  outline: 2px solid #9966FF !important;
+  color: #9966FF;
+}
+
+body[data-colortheme="violet"] button:focus {  
+  border: 2px solid #9966FF !important;
+  color: black;
+  background: white;
+}
+
+body[data-colortheme="violet"] a.linkIcon-de {    
+    border-color: #9966FF;
+}
+
+body[data-colortheme="violet"] .content-type-text a, 
+body[data-colortheme="violet"] .content-type-textpic a, 
+body[data-colortheme="violet"] .table a, 
+body[data-colortheme="violet"] .tx-powermail a, 
+body[data-colortheme="violet"] a[target="_blank"], 
+body[data-colortheme="violet"] .news-single .ce-bodytext a, 
+body[data-colortheme="violet"] .flexslider .caption-title a,
+body[data-colortheme="violet"] .cookie-consent-replacement a {  
+  border-color: #9966FF;
+}
+
+body[data-colortheme="violet"] a.btn-primary.btn,
+body[data-colortheme="violet"] .powermail_tab_navigation button.btn-primary.btn  {
+  outline: 2px solid #9966FF !important;
+  background: white;
+  color: black;  
+  border: 0;
+  margin-left: 2px;  
+    
+}
+
+body[data-colortheme="violet"] a.btn-primary.btn:hover,
+body[data-colortheme="violet"] .powermail_tab_navigation button.btn-primary.btn:hover,
+body[data-colortheme="violet"] a.btn-primary.btn:focus,
+body[data-colortheme="violet"] .powermail_tab_navigation button.btn-primary.btn:focus,
+body[data-colortheme="violet"] a.btn-primary.btn.active {
+background: #9966FF;
+color: #fff;
+}
+
+body[data-colortheme="violet"] input.btn:hover { 
+  color: #fff;
+  background: #9966FF;
+
+}
+
+body[data-colortheme="violet"] .bg-red {
+  background: #9966FF;
+}
+
+body[data-colortheme="violet"] #sidbar {
+    background-color: #9966FF;
+}
+
+body[data-colortheme="violet"] .accordion .card .card-header {
+    color: inherit;
+    border-color: #9966FF; 
+    background-color: transparent;
+    border-radius: 0;    
+    border: 0;
+}
+
+body[data-colortheme="violet"] .card {
+  border: 2px solid #9966FF !important;
+}
+
+ body[data-colortheme="violet"] .infobox .card {
+    border-left: 0.75rem solid #9966FF !important;
+  }
+  
+body[data-colortheme="violet"] .ce-uploads .ce-uploads-fileName {
+  text-decoration: underline #9966FF;
+ }
+
+body[data-colortheme="violet"] .news .news-list-item .col-md-6 .lead, 
+body[data-colortheme="violet"] .person-related-exhibition .col-md-6 .lead {
+    border-bottom: 1px solid #9966FF;    
+} 
+
+body[data-colortheme="violet"] #kesearch_pagebrowser_bottom .kesearch_pagebrowser ul li a.current,
+body[data-colortheme="violet"] #kesearch_pagebrowser_bottom .kesearch_pagebrowser ul li a:hover {
+    background-color: #9966FF;
+    outline: 2px solid #9966FF;
+    color: #fff;
+}
+body[data-colortheme="violet"] #kesearch_pagebrowser_bottom .kesearch_pagebrowser ul li a {
+    background-color: #fff;
+    outline: 2px solid #9966FF;
+    color: black;
+}
+
+body[data-colortheme="violet"] .resizable[max-width~="600px"] .row .col-xl-4>div.content {
+  border-bottom: 1px solid #9966FF;  
+}
+
+body[data-colortheme="violet"] .tx-powermail .btn-group .btn-primary,
+body[data-colortheme="violet"] .tx-powermail .btn-group button:active {
+    background-color: #9966FF !important;
+    border-color: #9966FF !important;
+}
+
+body[data-colortheme="violet"] .powermail_tab_navigation .btn-warning {
+    background: #9966FF;    
+}
+
+body[data-colortheme="violet"] input.btn {
+    color: black;
+    outline: 2px solid #9966FF;
+    background: #fff;
+}
+
+
+body[data-colortheme="violet"] .news .news-list-item .col-md-12 .lead, 
+body[data-colortheme="violet"] .person-related-exhibition .col-md-12 .lead {
+    border-bottom: 1px solid #9966FF;
+} 
+
+body[data-colortheme="violet"] .row .col-xl-3.col-sm-12 .content-type-textpic:last-child {
+    border-bottom: 1px solid #9966FF;
+}
+
+@media (max-width: 1200px) {
+body[data-colortheme="violet"] .content .col-xl-4>div.content {
+  border-bottom: 1px solid #9966FF;
+}
+}
+
+body[data-colortheme="violet"] .category-wrapper .dropdown>button.active {
+    background: #9966FF;
+}
+
+body[data-colortheme="violet"] .category-wrapper select.categoryItems.active,
+body[data-colortheme="violet"] .category-wrapper .dropdown > button.active {
+    background: #9966FF;
+}
+
+body[data-colortheme="violet"] .category-wrapper .dropdown-menu .divider {
+    background-color: #9966FF;
+}
+
+body[data-colortheme="violet"] .dropdown-menu a.selected {
+    background-color: #9966FF !important;    
+}
+
+body[data-colortheme="violet"] .news-list-view .card {    
+    border: 0 !important;
+    border-bottom: 1px solid rgba(0,0,0,0.5) !important;
+
+}
+
+body[data-colortheme="violet"] .persons .letter-anchors .letter-anchor {
+color: #9966FF;
+    background: #fff;
+    outline: 2px solid #9966FF;
+}
+
+body[data-colortheme="violet"] .persons .letter-anchors .letter-anchor:hover {
+    color: #fff;
+        background: #9966FF;
+}
+
+body[data-colortheme="violet"] #mainnav li.mainmenue a.quick-link {    
+    background-color: #9966FF;   
+}
+
+body[data-colortheme="violet"] #quicknavigation {
+    background-color: #9966FF;
+}
+
+body[data-colortheme="violet"] #quicknavigation ul {
+    background-color: #9966FF;
+}
+
+body[data-colortheme="violet"] #mainnav li.dropdown ul.dropdown-menu li.nav-item .dropdown-menu2 li.active a {
+background-color: #9966FF;
+color: white;
+}
+
+body[data-colortheme="violet"] #mainnav a:hover {
+  outline: 2px solid #9966FF !important;
+  color: #9966FF;
+}
+
+body[data-colortheme="violet"] #mainnav li.active > a:hover {
+  outline: none !important;
+}
+
+body[data-colortheme="violet"] #mainnav li.nav-item.active > a,
+body[data-colortheme="violet"] #mainnav li.nav-item.active .sub_navi .nav-item.active > a {
+     background-color: #9966FF;   
+     color: white;
+     padding-left: 10px;
+}
+
+body[data-colortheme="violet"] #footernav a {
+  padding: 4px 5px;  
+}
+
+body[data-colortheme="violet"] #footernav a:hover,
+body[data-colortheme="violet"] #footernav a:focus {
+  outline: 2px solid #9966FF !important;
+  color: #9966FF;  
+}
+
+body[data-colortheme="violet"] #footernav a.active {
+  background-color: #9966FF;   
+  color: white; 
+}
+
+body[data-colortheme="violet"] #footernav a.active:hover,
+body[data-colortheme="violet"] #footernav a.active:focus {
+  outline: none !important;
+}
+
+body[data-colortheme="violet"] .flex-direction-nav a {
+
+}
+
+body[data-colortheme="violet"] .flex-direction-nav a:hover,
+body[data-colortheme="violet"] .flex-pauseplay a:hover {
+  background-color: #9966FF;  
+}
+
+body[data-colortheme="violet"] .icon-Pfeilelemente-1 {
+color:#9966FF;
+width: 30px;
+height: 30px;
+border-radius: 50%;
+}
+
+body[data-colortheme="violet"] .icon-Pfeilelemente-1:hover {
+background:#9966FF;
+color: white;
+}
+
+body[data-colortheme="violet"] .card-columns .btn-read-more,
+body[data-colortheme="violet"] #top-link,
+body[data-colortheme="violet"] .flex-direction-nav a:before,
+body[data-colortheme="violet"] .flex-pauseplay a:before,
+body[data-colortheme="violet"] .row.person-register .btn-read-more span,
+body[data-colortheme="violet"] .news-list-view .btn-read-more span  {
+  background-color: transparent;
+    color:#9966FF; 
+  /*filter: invert(27%) sepia(82%) saturate(2765%) hue-rotate(222deg) brightness(105%) contrast(101%);  */
+  
+}
+/*https://codepen.io/sosuke/pen/Pjoqqp*/
+body[data-colortheme="violet"] .flex-direction-nav a:hover::before,
+body[data-colortheme="violet"] .flex-pauseplay a:hover::before {
+  color: white;
+  /*border-radius: 50%;
+  filter: invert(100%) sepia(10%) saturate(100%) hue-rotate(180deg) brightness(100%) contrast(150%);  */
+}
+
+body[data-colortheme="violet"] .card-columns .btn-read-more:hover span,
+body[data-colortheme="violet"] #top-link:hover,
+body[data-colortheme="violet"] .row.person-register .btn-read-more:hover span,
+body[data-colortheme="violet"] .news-list-view .btn-read-more:hover span  {
+    color: white;
+    background: #9966FF;
+    border-radius: 50%;
+}
+
+body[data-colortheme="violet"] #searchbutton:hover {
+  color: #9966FF;
+    filter: invert(45%) sepia(22%) saturate(6154%) hue-rotate(233deg) brightness(100%) contrast(102%);
+}
+
+body[data-colortheme="violet"] #contrastbutton:hover {
+  color: #9966FF;    
+}
+
+body[data-colortheme="violet"] #language-menu a:hover {  
+  color: #9966FF;
+}
+
+body[data-colortheme="violet"] #logo a:hover img {
+ filter: invert(45%) sepia(22%) saturate(6154%) hue-rotate(233deg) brightness(100%) contrast(102%);
+}
+
+body[data-colortheme="violet"] .ce-uploads li img {
+ background-color: transparent;
+ filter: invert(45%) sepia(22%) saturate(6154%) hue-rotate(233deg) brightness(100%) contrast(102%);  
+}
+
+body[data-colortheme="violet"] .ce-uploads li:hover img {
+background-color: #9966FF;  
+  filter: invert(100%) sepia(10%) saturate(100%) hue-rotate(180deg) brightness(100%) contrast(150%);  
+ 
+}
+
+body[data-colortheme="violet"] .tx-kesearch-pi1 #kesearch_results .result-list-item .hit { 
+  color: #9966FF;
+}
+
+body[data-colortheme="violet"] #quicknavigation a.quick-link {
+  padding: 0.9rem 1rem 0.8rem 1rem;
+  color: black;
+}
+
+body[data-colortheme="violet"] #quicknavigation {
+  color: #9966FF;
+  background: white;
+  border: 2px solid #9966FF;
+}
+
+body[data-colortheme="violet"] .news-list-view .pagination li a {
+   color: black;
+   border: 2px solid #9966FF;
+   background: #fff;
+}
+
+body[data-colortheme="violet"] .news-list-view .pagination li.active span {
+    background-color: #9966FF;
+    border: 2px solid #9966FF;      
+}
+
+body[data-colortheme="violet"] .news-list-view .pagination li a:hover {
+    color: #fff;
+    background: #9966FF;
+    
+}
+
+body[data-colortheme="violet"] .ce-uploads li a.linkIcon-jpg img,
+body[data-colortheme="violet"] .ce-uploads li a.linkIcon-jpeg img,
+body[data-colortheme="violet"] .ce-uploads li a.linkIcon-pdf img {
+	filter: none;
+}
+
+body[data-colortheme="violet"] .ce-uploads li:hover a.linkIcon-jpg img,
+body[data-colortheme="violet"] .ce-uploads li:hover a.linkIcon-jpeg img,
+body[data-colortheme="violet"] .ce-uploads li:hover a.linkIcon-pdf img {
+	background: transparent;
+}
+	

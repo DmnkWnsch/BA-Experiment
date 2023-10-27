@@ -1,0 +1,560 @@
+/*VA Kategorien ausblenden*/
+#page9 .date-menu .option-221,
+.date-menu .option-120,
+.date-menu .option-119,
+.date-menu .option-118,
+.date-menu .option-117 {
+	display: none;
+}
+
+
+
+/***********************/
+/* register of persons */
+/***********************/
+
+.category-wrapper .dropdown>button.active {
+    background: #212529;
+}
+
+.category-wrapper select.categoryItems,
+.category-wrapper .dropdown > button {
+    /*background: #727173;*/
+    background: #fff;
+    border: none;
+    /*color: #fff;*/
+    color: #727173;
+    width: 100%;
+    text-align: left;
+    font-size: 0.8em;
+    border: 3px solid #727173;
+    height: 38px;
+    padding: 3px 0px 2px 5px;
+}
+.category-wrapper select.categoryItems.active,
+.category-wrapper .dropdown > button.active {
+    background: #212529;
+    color: #000 !important;
+}
+
+.category-wrapper .dropdown > .dropdown-menu {
+    min-width: 0;
+    width: 100%;
+    border-radius: 0;
+    max-height: 40em;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.category-wrapper .dropdown-menu>li>a {
+    display: block;
+    padding: 3px 12px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+
+.category-wrapper .dropdown-menu>li>a:focus, .category-wrapper .dropdown-menu>li>a:hover {
+    color: #262626;
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
+
+.category-wrapper .dropdown-menu .divider {
+    height: 1px;
+    margin: 5px 0;
+    overflow: hidden;
+    background-color: #212529;
+}
+
+@media screen and (min-width: 992px) {
+    .category-wrapper .dropdown {
+        margin-left: -15px;
+    }
+}
+
+.category-wrapper .dropdown > .dropdown-menu > li > a {
+    white-space: normal;
+    line-height: 1.14;
+    font-size: 0.8em;
+    padding-top: .6em;
+}
+
+.dropdown-menu a.selected {
+    background-color: #212529 !important;
+    color: #000 !important;
+}
+
+
+.news-list-view .news-list-item.hidden-by-search, .news-list-view .news-list-item.hidden-by-category {
+    display: none;
+    speak: none;
+}
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    position: absolute;
+    right: 28px;
+    top: 50%;    
+}
+
+.news-list-view .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+
+.news-list-view .card-columns.single-column {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;    
+}
+
+.news-list-view .card {
+    border: 0 !important;
+    border-bottom: 1px solid #212529 !important;
+    padding: 10px 0 15px;
+}
+
+.news-list-view .card figure {
+    padding-bottom: 10px;
+}
+
+#page9 .news-list-view .card-columns.single-column.event figure {
+    display: none;
+}
+
+.news-list-view h3[itemprop].h3,
+.news-list-view h2[itemprop].h2 {
+    margin: -.45em 0 .125em;
+}
+.person-register h3[itemprop].h3,
+.person-register h2[itemprop].h2 {
+    margin-top: 0em;
+}
+
+.person-register table.table-striped td:first-child, .news-single table.table-striped td:first-child {
+    width: 25%;
+}
+
+.news-single .table tr td:first-child,
+.person-register .table tr td:first-child{
+    white-space: nowrap;
+}
+
+.news-list-view h3[itemprop].h3 > a::after,
+.news-list-view h2[itemprop].h2 > a::after {
+    position: absolute;
+    bottom: -.5rem;
+    left: 15px;
+    margin-left: 0;
+    font-size: .75em;
+}
+
+.news-list-view time {
+    font-size: 0.9rem;    
+    font-family: "Futter Grotesk Bold";
+}
+
+.news-list-view hr {
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,0.1) !important;
+}
+
+.news-list-view .pagination li {
+    padding: 0 2px;
+}
+
+.news-list-view .pagination li:first-child {
+    padding-left: 0;
+}
+
+.news-list-view .pagination li a, .news-list-view .pagination li.active span {
+    position: relative;
+    display: block;
+    padding: 8px 12px;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1;
+}
+
+.news-list-view .pagination li a {
+    color: #fff;
+    background-color: #555;
+    border: 2px solid #555; 
+}
+
+.news-list-view .pagination li.active span, .news-list-view .pagination li a:hover {
+    color: #000;
+    background-color: #212529;
+    border: 2px solid #212529;      
+}
+
+.news-list-view .pagination li.active span {
+    color: #fff;
+}
+
+.row.person-register[data-view="vcard"] hr {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.row.person-register .btn-read-more,
+.news-list-view .btn-read-more {
+text-align: left;
+    height: inherit;
+    overflow: inherit;
+    display: block;
+    width: inherit;
+    border: none;
+    font-size: inherit;
+    margin-left: 0;
+    padding: 0;
+    line-height: 32px;
+    color: inherit;
+    background-image: none;
+    vertical-align: text-top;
+    background-position: unset;
+    flex-wrap: nowrap;
+    white-space: normal;
+}
+
+.row.person-register[data-view="list"] .news-list-item {
+    padding-bottom: 1rem;
+    padding-top: 0rem;
+}
+
+.row.person-register[data-view="vcard"] .news-list-item_row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.row.person-register[data-view="list"] .news-list-item .lead {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.person-register[data-view="vcard"] .news-list-item .img-wrapper > img[src$="dummy-preview-image.png"] {
+    opacity: 0;
+    visibility: hidden;
+    speak: none;
+}
+
+
+.row.person-register[data-view="list"].selected-list-view h2 {
+  font-size: 20px;
+  line-height: 26px;
+  font-family: "Fira Sans Book", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.person-search-wrapper {
+    margin: 2rem 0 2rem -1rem;
+}
+
+.flex-grow-wrapper {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.flex-grow-wrapper > .switch_view-wrapper {
+    /*float: left;*/
+    margin-right: 1.5rem;
+    display: none;
+}
+.flex-grow-wrapper > .search-wrapper {
+    flex-grow: 1;
+    position: relative;
+}
+
+button.switch_view {
+  height: 3.4rem;
+
+}
+
+button.switch_view[data-view="list"] > .view_list {
+    display: none;
+    speak: none;
+}
+.view_vcard, button.switch_view[data-view="vcard"] > .view_vcard {
+    display: none;
+    speak: none;
+}
+button.switch_view[data-view="list"] > .view_vcard {
+    display: block;
+    speak: inherit;
+}
+
+/*input#person-search {*/
+input.custom-search {
+    padding-left: 3rem;
+    border-radius: 0;
+    border: 3px solid #727173;
+}
+input.custom-search.active {
+    background: #727173;
+    color: #fff !important;
+}
+/*input#person-search + i.fa {*/
+input.custom-search + span.fa {
+    color: #727173;
+    position: absolute;
+    /*top: 20%;*/
+    top: 47.5%;
+    /*left: 2.5rem;*/
+    left: 1rem;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+input.custom-search.active + span.fa {
+    color: #fff !important;
+}
+
+
+.person-register {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.person-related-exhibition {
+    padding-left: 20px;
+}
+
+.person-related-exhibition .lead { 
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.person-register .lead p + p {
+    margin-top: 0;
+}
+
+
+.news-list-item a.img-wrapper {
+    display: block;
+    /*text-align: center;*/
+    width: 100%;
+    max-width: none;
+    background: #767676;
+    background: rgba(118, 118, 118, .25);
+    overflow: hidden;
+    line-height: 19rem;
+    text-align: center;
+}
+.news-list-item a.img-wrapper > img {
+    display: inline-block;
+    width: 100%;
+    
+    position: relative;
+    /*left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);*/
+}
+.person-register .news-list-item .article-image {
+  height: 20rem;
+  overflow: hidden;
+}
+.person-register .news-list-item a.img-wrapper > img {
+    max-height: 20rem;
+    max-width: none;
+    width: auto;
+    height: 20rem;
+}
+
+
+table.contactdata {
+    margin: 1rem 0;
+    border: none;
+    border-collapse: collapse;
+}
+.person-register[data-view="list"] table.contactdata {
+    margin: 0;
+}
+table.contactdata td {
+    padding: .125rem 0 0;    
+    word-break: break-all;
+}
+table.contactdata td:first-child {
+    padding-right: 1rem;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+
+table.contactdata + .lead {
+    margin-top: 1.5em;
+}
+
+.news-list-item .lead {
+    clear: both;
+}
+
+.lead ~ .details_ce {
+    margin: 5rem 0;
+}
+
+.details_ce {
+    margin-top: 30px;
+
+}
+
+.details_ce ~ .back-link {
+    margin-top: 2em;
+}
+
+.details_ce .card-body header { display: none; }
+
+.person-register[data-view="list"] .news-list-item {
+    width: 100%;
+}
+/*
+.person-register[data-view="list"] .news-list-item + .news-list-item,
+.person-register[data-view="list"] .news-list-item + span + .news-list-item {
+    border-top: 1px solid rgba(118, 118, 118, .25);
+}
+
+.person-register[data-view="list"] .img-wrapper {
+    display: none;
+    speak: none;
+}
+*/
+.person-register[data-view="list"] .article-image {
+    display: none;
+    speak: none;
+}
+.person-register[data-view="list"] .article-info > h3,
+.person-register[data-view="list"] .article-info > h2,
+.person-register[data-view="list"] .article-info > .lead > * {
+    /*float: left;*/
+    /*margin: 0 !important;*/
+}
+.person-register[data-view="list"] .article-info > h3,
+.person-register[data-view="list"] .article-info > h2 {
+    width: 50%;
+    padding-right: 1rem;
+    margin: 0 !important;
+}
+.person-register[data-view="list"] .article-info > .lead > * {
+    margin: 0 0 1rem !important;
+}
+.person-register[data-view="list"] .article-info > .lead > *,
+.person-register[data-view="list"] .article-info > .lead > table td {
+    /*width: 50%;*/
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.person-register[data-view="list"] .article-info > .lead > *:last-child {
+    padding-right: 0;
+}
+.person-register[data-view="list"] .article-info > .lead > .person-details {
+    display: none;
+}
+.person-register[data-view="list"] .article-info > h3 > a,
+.person-register[data-view="list"] .article-info > h2 > a {
+    line-height: 1;
+}
+.person-register[data-view="list"] .article-info > h3 > a::after
+.person-register[data-view="list"] .article-info > h2 > a::after {
+    position: static;
+}
+
+.persons .letter-anchors {
+    text-align: center;
+    
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    margin-bottom: 2rem;
+}
+.persons .letter-anchors .letter-anchor {
+    margin: 3px;
+    width: 3em;
+    background: #212529;
+    border-radius: 0;
+    color: #fff;
+}
+
+.persons span[id*="letter_"] {
+    position: relative;
+    top: -1em;
+}
+.persons[data-view="list"] span[id*="letter_"] {
+    display: block;
+    width: 100%;
+}
+
+.news-single .person-picture {
+    margin-bottom: 1.5em;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .person-register[data-view="list"] .article-info > h3,
+    .person-register[data-view="list"] .article-info > .lead > * {
+        /*width: 50%;*/
+    }
+    .person-register[data-view="list"] .article-info > h3 {
+        /*width: 50%;*/
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .person-register[data-view="list"] .article-info > h3,
+	.person-register[data-view="list"] .article-info > h2,
+    .person-register[data-view="list"] .article-info > .lead > * {
+        /*width: 22%;*/
+        width: 33.33%;
+        
+        -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+    }
+    .person-register[data-view="list"] .article-info > h3,
+	.person-register[data-view="list"] .article-info > h2	{
+        width: 34%;
+    }
+    .person-register[data-view="list"] .article-info > .lead {
+        display: flex;
+    }
+}

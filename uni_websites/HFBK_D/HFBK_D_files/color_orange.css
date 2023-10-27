@@ -1,0 +1,380 @@
+:root body[data-colortheme="orange"] {
+  --buttonfarbe: #FF6600;
+}
+
+body[data-colortheme="orange"] .infobox > .content {
+  border-color: #FF6600; 
+}
+
+body[data-colortheme="orange"] .cookie-consent-replacement .btn-primary {
+ background-color: #fff;
+    border-color: #FF6600; 
+    color: #FF6600;
+}
+
+body[data-colortheme="orange"] .cookie-consent-replacement .btn-primary:hover,
+body[data-colortheme="orange"] .cookie-consent-replacement .btn-primary:focus {
+  background-color: #FF6600;
+    border-color: #FF6600; 
+    color: #fff; 
+}
+
+body[data-colortheme="orange"] #quicknavigation {
+    background-color: #FF6600;
+}
+
+body[data-colortheme="orange"] hr,
+body[data-colortheme="orange"] .hr {
+    background: #FF6600;
+}
+
+body[data-colortheme="orange"] .quicknavigation-mobile span {
+    background: #FF6600;    
+}
+
+body[data-colortheme="orange"] a:focus {
+  outline: 2px solid #FF6600 !important;
+  color: #FF6600;
+}
+
+body[data-colortheme="orange"] button:focus {  
+  border: 2px solid #FF6600 !important;
+  color: black;
+  background: white;
+}
+
+body[data-colortheme="orange"] a.linkIcon-de {    
+    border-color: #FF6600;
+}
+
+body[data-colortheme="orange"] .content-type-text a, 
+body[data-colortheme="orange"] .content-type-textpic a, 
+body[data-colortheme="orange"] .table a, 
+body[data-colortheme="orange"] .tx-powermail a, 
+body[data-colortheme="orange"] a[target="_blank"], 
+body[data-colortheme="orange"] .news-single .ce-bodytext a, 
+body[data-colortheme="orange"] .flexslider .caption-title a,
+body[data-colortheme="orange"] .cookie-consent-replacement a {  
+  border-color: #FF6600;
+}
+
+body[data-colortheme="orange"] a.btn-primary.btn,
+body[data-colortheme="orange"] .powermail_tab_navigation button.btn-primary.btn  {
+  outline: 2px solid #FF6600 !important;
+  background: white;
+  color: black;  
+  border: 0;
+  margin-left: 2px; 
+  border-radius: 0;
+    
+}
+
+body[data-colortheme="orange"] a.btn-primary.btn:hover,
+body[data-colortheme="orange"] .powermail_tab_navigation button.btn-primary.btn:hover,
+body[data-colortheme="orange"] a.btn-primary.btn:focus,
+body[data-colortheme="orange"] .powermail_tab_navigation button.btn-primary.btn:focus,
+body[data-colortheme="orange"] a.btn-primary.btn.active {
+background: #FF6600;
+color: #fff;
+}
+
+body[data-colortheme="orange"] input.btn:hover { 
+  color: #fff;
+  background: #FF6600;
+
+}
+
+body[data-colortheme="orange"] .bg-red {
+  background: #FF6600;
+}
+
+body[data-colortheme="orange"] #sidbar {
+    background-color: #FF6600;
+}
+
+body[data-colortheme="orange"] .accordion .card .card-header {
+    color: inherit;
+    border-color: #FF6600; 
+    background-color: transparent;
+    border-radius: 0;    
+    border: 0;
+}
+
+body[data-colortheme="orange"] .card {
+  border: 2px solid #FF6600 !important;
+}
+
+ body[data-colortheme="orange"] .infobox .card {
+    border-left: 0.75rem solid #FF6600 !important;
+  }
+
+body[data-colortheme="orange"] .ce-uploads .ce-uploads-fileName {
+  text-decoration: underline #FF6600;
+ }
+
+body[data-colortheme="orange"] .news .news-list-item .col-md-6 .lead, 
+body[data-colortheme="orange"] .person-related-exhibition .col-md-6 .lead {
+    border-bottom: 1px solid #FF6600;    
+} 
+
+body[data-colortheme="orange"] #kesearch_pagebrowser_bottom .kesearch_pagebrowser ul li a.current,
+body[data-colortheme="orange"] #kesearch_pagebrowser_bottom .kesearch_pagebrowser ul li a:hover {
+    background-color: #FF6600;
+    outline: 2px solid #FF6600;
+    color: #fff;
+}
+body[data-colortheme="orange"] #kesearch_pagebrowser_bottom .kesearch_pagebrowser ul li a {
+    background-color: #fff;
+    outline: 2px solid #FF6600;
+    color: black;
+}
+
+body[data-colortheme="orange"] .resizable[max-width~="600px"] .row .col-xl-4>div.content {
+  border-bottom: 1px solid #FF6600;  
+}
+
+body[data-colortheme="orange"] .tx-powermail .btn-group .btn-primary,
+body[data-colortheme="orange"] .tx-powermail .btn-group button:active {
+    background-color: #FF6600 !important;
+    border-color: #FF6600 !important;
+	color: #fff !important;
+}
+
+body[data-colortheme="orange"] .powermail_tab_navigation .btn-warning {
+    background: #FF6600;    
+}
+
+body[data-colortheme="orange"] input.btn {
+    color: black;
+    outline: 2px solid #FF6600;
+    background: #fff;
+	box-shadow: 0;
+}
+
+
+body[data-colortheme="orange"] .news .news-list-item .col-md-12 .lead, 
+body[data-colortheme="orange"] .person-related-exhibition .col-md-12 .lead {
+    border-bottom: 1px solid #FF6600;
+} 
+
+body[data-colortheme="orange"] .row .col-xl-3.col-sm-12 .content-type-textpic:last-child {
+    border-bottom: 1px solid #FF6600;
+}
+
+@media (max-width: 1200px) {
+body[data-colortheme="orange"] .content .col-xl-4>div.content {
+  border-bottom: 1px solid #FF6600;
+}
+}
+
+body[data-colortheme="orange"] .category-wrapper .dropdown>button.active {
+    background: #FF6600;
+}
+
+body[data-colortheme="orange"] .category-wrapper select.categoryItems.active,
+body[data-colortheme="orange"] .category-wrapper .dropdown > button.active {
+    background: #FF6600;
+}
+
+body[data-colortheme="orange"] .category-wrapper .dropdown-menu .divider {
+    background-color: #FF6600;
+}
+
+body[data-colortheme="orange"] .dropdown-menu a.selected {
+    background-color: #FF6600 !important;    
+}
+
+body[data-colortheme="orange"] .news-list-view .card {    
+    border: 0 !important;
+   border-bottom: 1px solid rgba(0,0,0,0.5) !important;
+
+}
+
+body[data-colortheme="orange"] .persons .letter-anchors .letter-anchor {
+color: #FF6600;
+    background: #fff;
+    outline: 2px solid #FF6600;
+}
+
+body[data-colortheme="orange"] .persons .letter-anchors .letter-anchor:hover {
+    color: #fff;
+        background: #FF6600;
+}
+
+body[data-colortheme="orange"] #mainnav li.mainmenue a.quick-link {    
+    background-color: #FF6600;   
+}
+
+body[data-colortheme="orange"] #quicknavigation {
+    background-color: #FF6600;
+}
+
+body[data-colortheme="orange"] #quicknavigation ul {
+    background-color: #FF6600;
+}
+
+body[data-colortheme="orange"] #mainnav li.dropdown ul.dropdown-menu li.nav-item .dropdown-menu2 li.active a {
+background-color: #FF6600;
+color: white;
+}
+
+body[data-colortheme="orange"] #mainnav a:hover {
+  outline: 2px solid #FF6600 !important;
+  color: #FF6600;
+}
+
+body[data-colortheme="orange"] #mainnav li.active > a:hover {
+  outline: none !important;
+}
+
+body[data-colortheme="orange"] #mainnav li.nav-item.active > a,
+body[data-colortheme="orange"] #mainnav li.nav-item.active .sub_navi .nav-item.active > a {
+     background-color: #FF6600;   
+     color: white;
+     padding-left: 10px;
+}
+
+body[data-colortheme="orange"] #footernav a {
+  padding: 4px 5px;  
+}
+
+body[data-colortheme="orange"] #footernav a:hover,
+body[data-colortheme="orange"] #footernav a:focus {
+  outline: 2px solid #FF6600 !important;
+  color: #FF6600;  
+}
+
+body[data-colortheme="orange"] #footernav a.active {
+  background-color: #FF6600;   
+  color: white; 
+}
+
+body[data-colortheme="orange"] #footernav a.active:hover,
+body[data-colortheme="orange"] #footernav a.active:focus {
+  outline: none !important;
+}
+
+body[data-colortheme="orange"] .flex-direction-nav a {
+
+}
+
+body[data-colortheme="orange"] .flex-direction-nav a:hover,
+body[data-colortheme="orange"] .flex-pauseplay a:hover {
+  background-color: #FF6600;  
+}
+
+body[data-colortheme="orange"] .icon-Pfeilelemente-1 {
+color:#FF6600;
+width: 30px;
+height: 30px;
+border-radius: 50%;
+}
+
+body[data-colortheme="orange"] .icon-Pfeilelemente-1:hover {
+background:#FF6600;
+color: white;
+}
+
+body[data-colortheme="orange"] .card-columns .btn-read-more,
+body[data-colortheme="orange"] #top-link,
+body[data-colortheme="orange"] .flex-direction-nav a:before,
+body[data-colortheme="orange"] .flex-pauseplay a:before,
+body[data-colortheme="orange"] .row.person-register .btn-read-more span,
+body[data-colortheme="orange"] .news-list-view .btn-read-more span {
+  background-color: transparent;
+    color:#FF6600; 
+  /*filter: invert(27%) sepia(82%) saturate(2765%) hue-rotate(222deg) brightness(105%) contrast(101%);  */
+  
+}
+/*https://codepen.io/sosuke/pen/Pjoqqp*/
+body[data-colortheme="orange"] .flex-direction-nav a:hover::before,
+body[data-colortheme="orange"] .flex-pauseplay a:hover::before {
+  color: white;
+  /*border-radius: 50%;
+  filter: invert(100%) sepia(10%) saturate(100%) hue-rotate(180deg) brightness(100%) contrast(150%);  */
+}
+
+body[data-colortheme="orange"] .card-columns .btn-read-more:hover span,
+body[data-colortheme="orange"] #top-link:hover,
+body[data-colortheme="orange"] .row.person-register .btn-read-more:hover span,
+body[data-colortheme="orange"] .news-list-view .btn-read-more:hover span {
+    color: white;
+    background: #FF6600;
+    border-radius: 50%;
+}
+
+body[data-colortheme="orange"] #searchbutton:hover {
+  color: #FF6600;
+    filter: invert(46%) sepia(65%) saturate(2947%) hue-rotate(358deg) brightness(100%) contrast(109%);
+}
+
+body[data-colortheme="orange"] #contrastbutton:hover {
+  color: #FF6600;    
+}
+
+
+body[data-colortheme="orange"] #language-menu a:hover {  
+  color: #FF6600;
+}
+
+body[data-colortheme="orange"] #logo a:hover img {
+ filter: invert(46%) sepia(65%) saturate(2947%) hue-rotate(358deg) brightness(100%) contrast(109%); 
+}
+
+body[data-colortheme="orange"] .ce-uploads li img {
+background-color: transparent;
+ filter: invert(46%) sepia(65%) saturate(2947%) hue-rotate(358deg) brightness(100%) contrast(109%); 
+}
+
+body[data-colortheme="orange"] .ce-uploads li:hover img {
+   background-color: #FF6600;  
+  filter: invert(100%) sepia(10%) saturate(100%) hue-rotate(180deg) brightness(100%) contrast(150%);  
+ 
+}
+
+body[data-colortheme="orange"] .tx-kesearch-pi1 #kesearch_results .result-list-item .hit { 
+  color: #FF6600;
+}
+
+/*neu*/
+
+body[data-colortheme="orange"] #quicknavigation a.quick-link {
+  padding: 0.9rem 1rem 0.8rem 1rem;
+  color: black;
+}
+
+body[data-colortheme="orange"] #quicknavigation {
+  color: #FF6600;
+  background: white;
+  border: 2px solid #FF6600;
+}
+
+body[data-colortheme="orange"] .news-list-view .pagination li a {
+   color: black;
+   border: 2px solid #FF6600;
+   background: #fff;
+}
+
+body[data-colortheme="orange"] .news-list-view .pagination li.active span {
+    background-color: #FF6600;
+    border: 2px solid #FF6600;      
+}
+
+body[data-colortheme="orange"] .news-list-view .pagination li a:hover {
+    color: #fff;
+    background: #FF6600;
+    
+}
+
+body[data-colortheme="orange"] .ce-uploads li a.linkIcon-jpg img,
+body[data-colortheme="orange"] .ce-uploads li a.linkIcon-jpeg img,
+body[data-colortheme="orange"] .ce-uploads li a.linkIcon-pdf img {
+	filter: none;
+}
+
+body[data-colortheme="orange"] .ce-uploads li:hover a.linkIcon-jpg img,
+body[data-colortheme="orange"] .ce-uploads li:hover a.linkIcon-jpeg img,
+body[data-colortheme="orange"] .ce-uploads li:hover a.linkIcon-pdf img {
+	background: transparent;
+}
+	
