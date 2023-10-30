@@ -1,5 +1,5 @@
 <?php
-/*require ($_SERVER["DOCUMENT_ROOT"] . '/util/util.php');
+require ($_SERVER["DOCUMENT_ROOT"] . '/util/util.php');
 $util = new Util();
 session_start();
 
@@ -19,10 +19,10 @@ if ($_SESSION['saved'] == false) {
     $_SESSION['current_site'] = $_SESSION['current_site'] + 1;
     $_SESSION['saved'] = true;
     $util->updateUID($_SESSION['uid'], $_SESSION['current_banner'], $_SESSION['current_site']);
-}*/
+}
 
-//$newSite = $_SESSION['$current_site'];
-$newSite = 2;
+$newSite = $_SESSION['current_site'];
+//$newSite = 2;
 $shownSite = $newSite - 1;
 $progress = (100 / 4) * ($shownSite);
 

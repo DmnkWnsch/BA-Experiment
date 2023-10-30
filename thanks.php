@@ -3,7 +3,7 @@ require ($_SERVER["DOCUMENT_ROOT"] . '/util/util.php');
 $util = new Util();
 session_start();
 
-/*if (!isset($_SESSION['uid'])) {
+if (!isset($_SESSION['uid'])) {
     echo "Es ist ein Fehler aufgetreten. Bitte starte das Expirment erneut.";
     die();
 }
@@ -12,11 +12,11 @@ session_start();
 if ($_SESSION['current_site'] < 4) {
     header("Location: break.php");
     die();
-}*/
+}
 
-//$uid = $_SESSION['uid'];
-$uid = "c4ad7a66-d847-4abc-a67a-d582854dea0e";
-//$util->setUIDFinished($uid);
+$uid = $_SESSION['uid'];
+//$uid = "c4ad7a66-d847-4abc-a67a-d582854dea0e";
+$util->setUIDFinished($uid);
 
 $poll_link = "https://bildungsportal.sachsen.de/umfragen/limesurvey/index.php/238957?user_id=$uid"
 

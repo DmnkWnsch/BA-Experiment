@@ -6,19 +6,15 @@ session_start();
 $redirect_url = "show.php";
 
 # generate a uuid to identify the user
-/*if (isset($_SESSION['uid'])) {
-    # User entered the website already, go where he left of
-    # happens if the tab gets closed
-
-    # redirecting to the page where the cookie banners are shown
-    header("Location: " . $redirect_url);
-    die();
-}*/
-
 $uid = $util->generateUUID();
 
-//$uid_check = $util->checkUID($uid);
-$uid_check = [];
+if (isset($_SESSION['uid'])) {
+    # User entered the website already, go where he left of
+    # happens if the tab gets closed
+    $uid = $_SESSION['uid'];
+}
+
+$uid_check = $util->checkUID($uid);
 
 # creating an random order so every user sees a different one
 $random_order = range(1, 4);
@@ -43,6 +39,9 @@ if (sizeof($uid_check) > 0) {
     $currentId = $db_current;
     $current_site = $db_site;
     $finished = $db_finished;
+
+    # if user has already started, redirect to break site instead of next site
+    $redirect_url = "break.php";
 } else {
     # Inserting a new uid with the random order into the database
     $util->saveUID($uid, implode(",", $random_order), $currentId, $current_site);
