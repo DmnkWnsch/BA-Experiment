@@ -27,6 +27,7 @@ shuffle($random_order);
 # the current index of the order for a given user
 $currentId = 0;
 $current_site = 1;
+$finished = 0;
 
 if (sizeof($uid_check) > 0) {
     # UID already found in DB -> user closed browser while on website
@@ -35,11 +36,13 @@ if (sizeof($uid_check) > 0) {
     $db_current = $uid_check['current_banner'];
     $db_order = $uid_check['order'];
     $db_site = $uid_check['current_site'];
+    $db_finished = $uid_check['finished'];
 
     # setting the values so the old state will be saved in the session instead of a new one
     $random_order = explode(",", $db_order);
     $currentId = $db_current;
     $current_site = $db_site;
+    $finished = $db_finished;
 } else {
     # Inserting a new uid with the random order into the database
     $util->saveUID($uid, implode(",", $random_order), $currentId, $current_site);
@@ -49,6 +52,12 @@ if (sizeof($uid_check) > 0) {
 # should be available as long as the user doesnt close the browser
 # if he closes the browser, he could technically reenter -> double db entries + new order currently
 $_SESSION['uid'] = $uid;
+
+if ($finished == 1) {
+    header("Location: thanks.php");
+    die();
+}
+
 $_SESSION['current_site'] = $current_site;
 $_SESSION['current_banner'] = $currentId;
 $_SESSION['order'] = $random_order;

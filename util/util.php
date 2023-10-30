@@ -21,7 +21,9 @@ class Util {
         while ($row = $result->fetch_assoc()) {
             $list['uid'] = $row['uid'];
             $list['order'] = $row['order'];
-            $list['current'] = $row['current'];
+            $list['current_banner'] = $row['current_banner'];
+            $list['current_site'] = $row['current_site'];
+            $list['finished'] = $row['finished'];
         }
 
         return $list;
@@ -31,7 +33,7 @@ class Util {
     public function saveUID($uid, $order, $currentId, $current_site) {
         $db = new DBUtil();
 
-        $command = "INSERT INTO `users` SET `uid`='$uid', `order`='$order', `current_banner`='$currentId', `current_site`='$current_site';";
+        $command = "INSERT INTO `users` SET `uid`='$uid', `order`='$order', `current_banner`='$currentId', `current_site`='$current_site', `finished`='0';";
         $db->runStatement($command);
     }
 
@@ -39,6 +41,13 @@ class Util {
         $db = new DBUtil();
 
         $command = "UPDATE `users` SET `current_banner`='$currentId', `current_site`='$current_site' WHERE `uid`='$uid';";
+        $db->runStatement($command);
+    }
+
+    public function setUIDFinished($uid) {
+        $db = new DBUtil();
+
+        $command = "UPDATE `users` SET `finished`='1' WHERE `uid`='$uid';";
         $db->runStatement($command);
     }
 
