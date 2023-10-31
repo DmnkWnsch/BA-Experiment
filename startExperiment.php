@@ -3,7 +3,7 @@ require ($_SERVER["DOCUMENT_ROOT"] . '/util/util.php');
 $util = new Util();
 
 session_start();
-$redirect_url = "show.php";
+$redirect_url = "show";
 
 # generate a uuid to identify the user
 $uid = $util->generateUUID();
@@ -41,7 +41,7 @@ if (sizeof($uid_check) > 0) {
     $finished = $db_finished;
 
     # if user has already started, redirect to break site instead of next site
-    $redirect_url = "break.php";
+    $redirect_url = "break";
 } else {
     # Inserting a new uid with the random order into the database
     $util->saveUID($uid, implode(",", $random_order), $currentId, $current_site);
@@ -53,7 +53,7 @@ if (sizeof($uid_check) > 0) {
 $_SESSION['uid'] = $uid;
 
 if ($finished == 1) {
-    header("Location: thanks.php");
+    header("Location: thanks");
     die();
 }
 

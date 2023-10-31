@@ -10,7 +10,7 @@ if (!isset($_SESSION['uid'])) {
 
 # As we have 4 webpages to show, redirect to the ending page when we get here and have 4 pages visited
 if ($_SESSION['current_site'] < 4) {
-    header("Location: break.php");
+    header("Location: break");
     die();
 }
 

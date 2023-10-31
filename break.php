@@ -10,7 +10,7 @@ if (!isset($_SESSION['uid'])) {
 
 # As we have 4 webpages to show, redirect to the ending page when we get here and have 4 pages visited
 if ($_SESSION['current_site'] >= 4) {
-    header("Location: thanks.php");
+    header("Location: thanks");
     die();
 }
 
@@ -61,7 +61,7 @@ $progress = (100 / 4) * ($shownSite);
               <div class="row mt-4">
                 <div class="d-grid col-6 mx-auto">
                   <a
-                    href="show.php"
+                    href="show"
                     class="btn btn-success btn-fluid"
                     >Weiter zu Seite <?= $newSite ?></a
                   >
