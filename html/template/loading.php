@@ -4,7 +4,7 @@
     >
       <div
         class="spinner-border text-primary"
-        style="width: 5rem; height: 5rem"
+        style="width: 4rem; height: 4rem"
         role="status"
       >
         <span class="visually-hidden">Loading...</span>
