@@ -37,7 +37,7 @@ if ($showModal) {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>BA-Experiment</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -48,12 +48,37 @@ if ($showModal) {
       document.addEventListener("DOMContentLoaded", () => {
         const myModal = new bootstrap.Modal("#experimentModal");
         myModal.show();
+        console.log("banner");
       });
+
+      window.onload = () => {
+        removeLoadingScreen();
+      }
+
+      function removeLoadingScreen() {
+        let loadingScreen = document.getElementById("loadingScreen");
+        loadingScreen.style.visibility = "hidden";
+        loadingScreen.style.opacity = 0;
+      }
+
+      //setTimeout(removeLoadingScreen, 5000);
     </script>
+    <style>
+      .loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 999999;
+        transition: visibility 0s 350ms, opacity 350ms linear;
+      }
+    </style>
   </head>
   <body>
         <?php
             if ($showModal) {
+              include(__DIR__ . "/html/template/loading.php");
                 include(__DIR__ . "/html/template/$id.php");
             }
         ?>
