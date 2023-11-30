@@ -21,6 +21,7 @@ $current_banner = $_SESSION['current_banner'];
 $current_site = $_SESSION['current_site'];
 
 $id = $order[$current_banner];
+$data_banner_id = $id;
 
 $showModal = true;
 include ("saveClick.php");

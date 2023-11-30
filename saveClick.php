@@ -24,7 +24,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_SESSION['saved'] == true) {
     $options = "";
     $target = "";
 
-    $bannerId = $_POST['id'];
+    //$bannerId = $_POST['id'];
+    $bannerId = $data_banner_id;
     $availableActions = $actionsMap[$bannerId];
 
     # iterate through the possible actions for a specific banner and set the "target" to the used action
@@ -47,6 +48,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_SESSION['saved'] == true) {
         }
 
         $options = implode(",", $selectedOptions);
+    }
+
+    if ($target == "") {
+        $target = "MANIPULATED";
+        $showModal = false;
     }
 
     # Saving the click to the database

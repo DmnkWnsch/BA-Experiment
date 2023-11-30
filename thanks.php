@@ -20,6 +20,7 @@ $util->setUIDFinished($uid);
 
 $poll_link = "https://bildungsportal.sachsen.de/umfragen/limesurvey/index.php/238957?user_id=$uid"
 
+//https://bildungsportal.sachsen.de/umfragen/limesurvey/index.php/238957?lang=de
 # TODO Link zur Weiterleitung zu LimeSurvey --> uid an Limesurvey weitergeben um beide Seiten miteinander in Verbindung bringen zu können
 # Example: https://bildungsportal.sachsen.de/umfragen/limesurvey/index.php/238957?user_id=c4ad7a66-d847-4abc-a67a-d582854dea0e
 
