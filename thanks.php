@@ -4,8 +4,8 @@ $util = new Util();
 session_start();
 
 if (!isset($_SESSION['uid'])) {
-    echo "Es ist ein Fehler aufgetreten. Bitte starte das Expirment erneut.";
-    die();
+  include (__DIR__ . "/html/template/error.php");
+  die();
 }
 
 # As we have 4 webpages to show, redirect to the ending page when we get here and have 4 pages visited
@@ -38,6 +38,7 @@ $poll_link = "https://bildungsportal.sachsen.de/umfragen/limesurvey/index.php/23
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <noscript><meta http-equiv="refresh" content="0;url=jserror" /></noscript>
   </head>
   <body>
     <div class="container-md mt-5">
