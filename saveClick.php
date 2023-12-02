@@ -57,6 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_SESSION['saved'] == true) {
 
     # Saving the click to the database
     $_SESSION['saved'] = false;
+    $_SESSION['lastDone'] = $bannerId;
     $util->saveBannerAction($uid, $bannerId, $target, $currentTime, $options);
 }
 

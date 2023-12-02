@@ -3,6 +3,11 @@ require ($_SERVER["DOCUMENT_ROOT"] . '/util/util.php');
 $util = new Util();
 session_start();
 
+if (!isset($_SESSION['uid'])) {
+  include (__DIR__ . "/html/template/error.php");
+  die();
+}
+
 $uni_websites = array(
     1 => "TUC/TUC.htm",
     2 => "HHL/HHL.htm",
@@ -26,6 +31,16 @@ $data_banner_id = $id;
 $showModal = true;
 include ("saveClick.php");
 
+$lastDone = isset($_SESSION['lastDone']) ? $_SESSION['lastDone'] : -1;
+
+var_dump($lastDone);
+
+if ($showModal) {
+  if ($lastDone == $data_banner_id) {
+    $showModal = false;
+  }
+}
+
 if ($showModal) {
   $util->saveBannerAction($uid, $id, 'open', time());
 }
@@ -44,6 +59,7 @@ if ($showModal) {
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <noscript><meta http-equiv="refresh" content="0;url=jserror" /></noscript>
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", () => {
         const myModal = new bootstrap.Modal("#experimentModal");
@@ -79,7 +95,7 @@ if ($showModal) {
         <?php
             if ($showModal) {
               include(__DIR__ . "/html/template/loading.php");
-                include(__DIR__ . "/html/template/$id.php");
+              include(__DIR__ . "/html/template/$id.php");
             }
         ?>
     <iframe
