@@ -55,8 +55,15 @@ $progress = (100 / 4) * ($shownSite);
                 <div class="progress-bar text-light w-<?= $progress ?>"><?= $progress ?>%</div>
               </div>
               <p class="card-text px-1">
-                Die Bearbeitung von <b>Seite <?= $shownSite ?></b> ist damit abgeschlossen.<br>
-                Weiter geht es mit einem Klick auf den Button.
+                <?php
+                  if ($shownSite > 0) {
+                    print ("Die Bearbeitung von <b>Seite $shownSite</b> ist damit abgeschlossen.<br>");
+                    print ("Weiter geht es mit einem Klick auf den Button.");
+                  } else {
+                    print ("Du hast noch <b>keine</b> Seite bearbeitet.<br>");
+                    print ("Beginne mit einem Klick auf den Button.");
+                  }
+                ?>
               </p>
 
               <div class="row mt-4">
@@ -64,7 +71,9 @@ $progress = (100 / 4) * ($shownSite);
                   <a
                     href="show"
                     class="btn btn-success btn-fluid"
-                    >Weiter zu Seite <?= $newSite ?></a
+                    >
+                    <?php print (($newSite == 1) ? "Beginnen" : "Weiter zu Seite $newSite"); ?>
+                    </a
                   >
                 </div>
               </div>

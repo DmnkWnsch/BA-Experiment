@@ -33,8 +33,6 @@ include ("saveClick.php");
 
 $lastDone = isset($_SESSION['lastDone']) ? $_SESSION['lastDone'] : -1;
 
-var_dump($lastDone);
-
 if ($showModal) {
   if ($lastDone == $data_banner_id) {
     $showModal = false;
