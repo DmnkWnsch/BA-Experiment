@@ -59,6 +59,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_SESSION['saved'] == true) {
     $_SESSION['saved'] = false;
     $_SESSION['lastDone'] = $bannerId;
     $util->saveBannerAction($uid, $bannerId, $target, $currentTime, $options);
+
+    $loadingTime = $_POST['tL'];
+    if (is_numeric($loadingTime)) {
+        $util->saveLoadingTime($uid, $bannerId, $loadingTime);
+    }
 }
 
 ?>

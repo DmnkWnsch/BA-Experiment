@@ -27,6 +27,7 @@
 
         <form method="POST" action="<?php $_SERVER['PHP_SELF']; ?>">
           <input type="text" name="id" value="2" hidden />
+          <input id="tL" type="number" name="tL" value="0" hidden />
           <div class="row text-start">
             <div class="col-3">
               <a

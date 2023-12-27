@@ -28,6 +28,7 @@
 
           <form method="POST" action="<?php $_SERVER['PHP_SELF']; ?>">
             <input type="text" name="id" value="4" hidden />
+            <input id="tL" type="number" name="tL" value="0" hidden />
             <div class="row text-center justify-content-end">
               <div class="col-4 pe-1">
                 <button

@@ -72,6 +72,12 @@ class Util {
         return vsprintf('%s%s-%s-%s-%s-%s%s%s', str_split(bin2hex($data), 4));
     }
 
+    public function saveLoadingTime($uid, $bannerId, $loadingTime) {
+        $db = new DBUtil();
+        $command = "INSERT INTO `loading_times` SET `uid`='$uid', `banner`='$bannerId', 
+        `loading_time`='$loadingTime';";
+        $db->runStatement($command);
+    }
 }
 
 ?>

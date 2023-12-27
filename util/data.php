@@ -1,15 +1,16 @@
 <?php
 
 # Utility class for connection to the database and sending statements to it
+include ("DBData.php");
 
 class DBUtil {
-    
     public function buildConnection() {
+        global $db_host, $db_user, $db_password, $db_target;
         $db_ini = parse_ini_file($_SERVER["DOCUMENT_ROOT"] . '/supersecretfile.ini');
-        return new mysqli($db_ini['db_host'], 
-                            $db_ini['db_user'], 
-                            $db_ini['db_password'],
-                            $db_ini['db_target']);
+        return new mysqli($db_host, 
+                            $db_user, 
+                            $db_password,
+                            $db_target);
     }
 
     public function runStatement($command) {

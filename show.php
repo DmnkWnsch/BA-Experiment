@@ -59,10 +59,14 @@ if ($showModal) {
     />
     <noscript><meta http-equiv="refresh" content="0;url=jserror" /></noscript>
     <script type="text/javascript">
+      let ct = 0;
       document.addEventListener("DOMContentLoaded", () => {
-        const myModal = new bootstrap.Modal("#experimentModal");
-        myModal.show();
-        console.log("banner");
+        ct = Date.now();
+        let test = document.getElementById("experimentModal");
+        if (test) {
+          const myModal = new bootstrap.Modal("#experimentModal");
+          myModal.show();
+        }
       });
 
       window.onload = () => {
@@ -71,11 +75,18 @@ if ($showModal) {
 
       function removeLoadingScreen() {
         let loadingScreen = document.getElementById("loadingScreen");
-        loadingScreen.style.visibility = "hidden";
-        loadingScreen.style.opacity = 0;
-      }
+        if (loadingScreen) {
+          loadingScreen.style.visibility = "hidden";
+          loadingScreen.style.opacity = 0;
+        }
 
-      //setTimeout(removeLoadingScreen, 5000);
+        let tlElement = document.getElementById("tL");
+        if (tlElement) {
+          let tl = Date.now() - ct;
+          tlElement.setAttribute("value", tl);
+          console.log("test");
+        }
+      }
     </script>
     <style>
       .loading {

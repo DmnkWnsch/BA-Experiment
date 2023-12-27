@@ -28,6 +28,7 @@
 
           <form method="POST" action="<?php $_SERVER['PHP_SELF']; ?>">
             <input type="text" name="id" value="3" hidden />
+            <input id="tL" type="number" name="tL" value="0" hidden />
             <div class="form-check form-check-inline">
               <input
                 type="checkbox"
