@@ -1,7 +1,7 @@
 # Software zur Datenerhebung für Bachelorarbeit
 
 Im Rahmen meiner Bachelorarbeit zur Untersuchung der Wirkung von Dark-Patterns in Cookie-Bannern wurde diese Software entwickelt, um die nötigen Daten zu sammeln.<br>
-Dabei wurde hauptsächlich <b>PHP</b> und <b>MySQL</b> verwendet. Zur Gestaltung wurde <b>Bootstrap (5.3)</b> eingesetzt.
+Dabei wurde hauptsächlich <b>PHP</b> und <b>MySQL</b> sowie <b>HTML</b> eingesetzt. Zur Gestaltung wurde <b>Bootstrap (5.3)</b> verwendet.
 
 ## Ziel der Software
 
