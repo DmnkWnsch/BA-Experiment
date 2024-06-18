@@ -13,3 +13,7 @@ Bei jedem Aufruf einer Seite wurde zufällig einer von vier verschiedenen Cookie
 Bei Verwendung wurde der gewählte Button sowie die gewählten Optionen gespeichert.
 
 Nach diesem Experiment fand eine Umfrage statt, um die Daten in Zusammenhänge, wie beispielsweise mit dem Alter, setzen zu können.
+
+## Beispiel eines Banners
+
+![Beispiel Cookie-Banner](CB-Example.png)
