@@ -17,3 +17,7 @@ Nach diesem Experiment fand eine Umfrage statt, um die Daten in Zusammenhänge, 
 ## Beispiel eines Banners
 
 ![Beispiel Cookie-Banner](CB-Example.png)
+
+## Beispiel einer Experimentseite
+
+![Beispiel Experiment-Seite](Site-Example.png)
